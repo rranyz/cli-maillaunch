@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Local configuration (may contain real OAuth credentials)
+maillaunch.config.yaml
+
+# Editor/OS
+.DS_Store
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+
+# Runtime data (SQLite databases, campaign state, token storage)
+data/*
+!data/.gitkeep

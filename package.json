@@ -1,0 +1,42 @@
+{
+  "name": "maillaunch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "bin": {
+    "maillaunch": "./dist/main.js"
+  },
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "typecheck": "tsc --noEmit",
+    "pretest": "npm run build",
+    "test": "node --import tsx --test tests/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rranyz/maillaunch.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rranyz/maillaunch/issues"
+  },
+  "homepage": "https://github.com/rranyz/maillaunch#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^7.1.0",
+    "better-sqlite3": "^13.0.3",
+    "commander": "^15.0.0",
+    "googleapis": "^186.0.0",
+    "pino": "^10.4.0",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.7"
+  }
+}
